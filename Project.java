@@ -342,7 +342,7 @@ class Hotel
                     System.out.println("===============");
                     System.out.println("Item   Quantity    Price");
                     System.out.println("-------------------------");
-                    for(Food obb:hotel_hotel_ob.deluxe_singleerrom[rn].food)
+                    for(Food obb:hotel_ob.deluxe_singleerrom[rn].food)
                     {
                         amount+=obb.price;
                         String format = "%-10s%-10s%-10s%n";
@@ -508,7 +508,7 @@ public class Project3 {
         {
             FileInputStream fin=new FileInputStream(f);
             ObjectInputStream ois=new ObjectInputStream(fin);
-            Hotel.ob=(holder)ois.readObject();
+            Hotel.hotel_ob=(holder)ois.readObject();
         }
         Scanner sc = new Scanner(System.in);
         int ch,ch2;
